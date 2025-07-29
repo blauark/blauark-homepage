@@ -1,1 +1,1 @@
-console.log('BlauArk 홈페이지 로드 완료');
+console.log('BlauArk Homepage Loaded');
