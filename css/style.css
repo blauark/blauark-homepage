@@ -202,10 +202,11 @@ section h2 {
 }
 
 footer {
+  /* 기본 푸터 스타일을 조정하여 정보와 맵, 언어 스위치를 배치합니다 */
   background-color: var(--primary-color);
   color: white;
-  padding: 1.5rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  text-align: left;
 }
 
 /* 풀-너비 이미지 스타일 */
@@ -231,4 +232,99 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/*
+ * 언어 전환 링크와 푸터 세부 정보에 대한 스타일을 정의합니다.
+ * 기존 스타일을 유지하면서 가독성을 높이기 위해 색상과 여백을 조정했습니다.
+ */
+
+/* 헤더 언어 전환 스위치 */
+header .lang-switch {
+  margin-left: auto;
+  /* Increase font size slightly for better visibility */
+  font-size: 1rem;
+}
+
+header .lang-switch a {
+  /* Make language buttons look like clickable pills */
+  color: var(--accent-color);
+  margin-left: 0.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--accent-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+header .lang-switch a:first-child {
+  margin-left: 0;
+}
+
+header .lang-switch a.active {
+  /* Highlight the active language with filled accent background */
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-color: var(--accent-color);
+}
+
+header .lang-switch a:hover {
+  /* On hover, fill background with accent color */
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* 푸터 정보와 지도 */
+footer .footer-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+footer .footer-info p {
+  margin-bottom: 0.3rem;
+}
+
+footer .footer-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer .footer-info a:hover {
+  text-decoration: underline;
+}
+
+footer .map-container {
+  margin-top: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* 푸터 언어 전환 스위치 */
+footer .lang-switch-footer {
+  margin-top: 1rem;
+  /* Match header language switcher style */
+  font-size: 1rem;
+}
+
+footer .lang-switch-footer a {
+  color: var(--accent-color);
+  margin: 0 0.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--accent-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+footer .lang-switch-footer a.active {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-color: var(--accent-color);
+}
+
+footer .lang-switch-footer a:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
 }

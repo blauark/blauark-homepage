@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 – BlauArk</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <meta property="og:title" content="联系我们 – BlauArk">
+  <meta property="og:description" content="联系BlauArk，了解更多合作机会。">
+  <meta property="og:image" content="../images/og-thumbnail.jpg">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="logo">
+      <img src="../images/logo-horizontal-white.png" alt="BlauArk 标识">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">公司介绍</a></li>
+        <li><a href="products.html">产品介绍</a></li>
+        <li><a href="services.html">服务介绍</a></li>
+        <li><a href="contact.html" class="active">联系我们</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+      <a href="../contact.html">KR</a> |
+      <a href="../en/contact.html">EN</a> |
+      <a href="../ja/contact.html">JA</a> |
+      <a href="contact.html" class="active">ZH</a>
+    </div>
+  </header>
+
+  <!-- 联系内容 -->
+  <section>
+    <div class="container">
+      <h2>联系我们</h2>
+      <div class="contact-info">
+        <p><ion-icon name="location-outline" style="vertical-align: middle; color: var(--primary-color); margin-right: 0.3rem;"></ion-icon><strong>地址:</strong> 韩国首尔市衿川区加山路9街66号 Derisen Valley 知识产业中心603室</p>
+        <p><ion-icon name="card-outline" style="vertical-align: middle; color: var(--primary-color); margin-right: 0.3rem;"></ion-icon><strong>企业登记号:</strong> 872‑87‑03664</p>
+        <!-- 公司电话は公開しません -->
+        <p><ion-icon name="mail-outline" style="vertical-align: middle; color: var(--primary-color); margin-right: 0.3rem;"></ion-icon><strong>邮箱:</strong> <a href="mailto:blauarkjw@gmail.com">blauarkjw@gmail.com</a></p>
+      </div>
+      <form action="mailto:blauarkjw@gmail.com" method="post" enctype="text/plain" style="margin-top:2rem;">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">邮箱</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">电话</label>
+          <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="message">留言</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">发送</button>
+      </form>
+    </div>
+  </section>
+  <!-- 页脚 -->
+  <footer>
+    <div class="footer-info">
+      <h3>유한회사 블라우아크<br>BlauArk Co., Ltd.</h3>
+      <p>韩国首尔市衿川区加山路9街66号 Derisen Valley 知识产业中心603室</p>
+      <p>企业登记号: 872‑87‑03664</p>
+      <p>邮箱: <a href="mailto:blauarkjw@gmail.com">blauarkjw@gmail.com</a></p>
+    </div>
+    <div class="map-container">
+      <iframe src="https://maps.google.com/maps?q=66%20Gasan-ro%209-gil,%20Geumcheon-gu,%20Seoul&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="lang-switch-footer">
+      <a href="../contact.html">KR</a> |
+      <a href="../en/contact.html">EN</a> |
+      <a href="../ja/contact.html">JA</a> |
+      <a href="contact.html" class="active">ZH</a>
+    </div>
+    <p style="margin-top:1rem;">&copy; 2025 BlauArk Co., Ltd. All rights reserved.</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
